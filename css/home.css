@@ -173,15 +173,16 @@ footer a:hover {
     margin-bottom: 100px;
   }
   .box:nth-child(4) {
-    margin-top: -11%;
+    margin-top: -8%;
   }
   
 
   #textbox {
+      text-align: center;
       font-size: 1.2em;
       font-size: 1.2em;
       margin-left: 0;
-    font-size: 1.2em;
+      font-size: 1.2em;
       margin-left: 0;
   }
 
