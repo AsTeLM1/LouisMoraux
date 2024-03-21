@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="static/css/contact.css"> 
+    <link rel="stylesheet" type="text/css" href="css/contact.css"> 
     <title>Formulaire HTML avec FormSubmit</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
     
     <input type="submit" value="Envoyer">
 </form>
-<p class="bottom">vous ne voulez plus me contacter ? <a href="home.html">cliquez ici</a></p>
+<p class="bottom">vous ne voulez plus me contacter ? <a href="index.html">cliquez ici</a></p>
 <script>
     // Attend que le DOM soit chargé
     document.addEventListener("DOMContentLoaded", function () {
@@ -33,7 +33,7 @@
             event.preventDefault();
 
             // Redirige l'utilisateur vers la page spécifiée après l'envoi du formulaire
-            window.location.href = "http://localhost:3000/Mailsend";
+            window.location.href = "Mailsend.html";
         });
     });
 </script>
