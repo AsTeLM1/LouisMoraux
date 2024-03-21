@@ -1,3 +1,4 @@
+
 /*css du type d'écriture*/
 .roboto-light {
   font-family: "Roboto", sans-serif;
@@ -40,103 +41,102 @@ body {
 /* Styles pour les conteneurs */
 .container {
   display: flex;
-  flex-wrap: wrap; /* Permet aux boîtes de passer à la ligne suivante */
+  flex-wrap: wrap;
   margin-top: -15%;
 }
 
 /* Styles pour les boîtes */
 .box {
-  width: 49%; /* Largeur des boîtes (45% pour deux boîtes sur une ligne) */
-  background-color: #1b2127; /* Couleur de fond des boîtes */
+  width: 49%;
+  background-color: #1b2127;
   margin-right: 15px;
-  padding: 20px; /* Espacement intérieur des boîtes */
-  box-sizing: border-box; /* La taille inclut les bordures et le remplissage */
-  border-radius: 40px; /* Bordures arrondies */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.box:last-child{
+.box:last-child {
   margin-right: 0;
 }
 .box:nth-child(3) {
   margin-top: 15px;
 }
-
 .box:nth-child(4) {
-  margin-top: -11%;
+  margin-top: -10%;
 }
 
-.inBox{
-text-align: center;
-font-size: 2em;
-margin: 5px;
-color: #fff;
+.inBox {
+  text-align: center;
+  font-size: 2em;
+  margin: 5px;
+  color: #fff;
 }
-#contactme{
+#contactme {
   margin-top: 5%;
 }
 .image_computer img {
-  width: 60%; /* Définir la largeur de l'image */
-  height: auto; /* Hauteur automatique pour conserver les proportions */
-  display: block; /* Pour centrer l'image horizontalement */
-  margin: 0 auto; /* Marge automatique pour centrer l'image horizontalement */
+  width: 60%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 .computer-image {
-  width: 60%; /* Définir la largeur de l'image */
-  height: auto; /* Hauteur automatique pour conserver les proportions */
-  display: block; /* Pour centrer l'image horizontalement */
-  margin: 0 auto 20px; /* Marge automatique pour centrer l'image horizontalement, avec une marge de 20px en bas */
-  border-radius: 10px; /* Bord arrondi pour l'image */
+  width: 60%;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 10px;
 }
 .image_profil {
-    text-align: center; /* Centre l'image horizontalement */
+  text-align: center;
 }
 .image_profil img {
-    border-radius: 50%; /* Rend l'image ronde en utilisant 50% du diamètre */
-    width: 200px; /* Définir la largeur de l'image */
-    height: 200px; /* Définir la hauteur de l'image */
-    margin-top: 10%;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: 10%;
 }
-#textbox{
+#textbox {
   font-size: 1.4em;
   color: #d2d2d2;
   margin-left: 8%;
 }
-#title{
-  margin-top: 10%
+#title {
+  margin-top: 10%;
 }
-#infos{
+#infos {
   margin-top: 12%;
 }
 
-.titlemid{
-  text-align: center; /* Centrer le texte horizontalement */
-  margin-left: auto; /* Centrer le texte horizontalement */
-  margin-right: auto; /* Centrer le texte horizontalement */
+.titlemid {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   color: #fff;
   padding-top: 15%;
 }
 .pmid {
-  text-align: center; /* Centrer le texte horizontalement */
+  text-align: center;
   font-size: 1.5em;
   color: #d2d2d2;
-  margin-left: auto; /* Centrer le texte horizontalement */
-  margin-right: auto; /* Centrer le texte horizontalement */
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 5%;
 }
 
 /* CSS pour le footer */
 footer {
   margin-top: 10%;
-  background-color: #1b2127; /* Couleur de fond du footer */
-  color: #fff; /* Couleur du texte du footer */
-  text-align: center; 
+  background-color: #1b2127;
+  color: #fff;
+  text-align: center;
   padding: 40px;
 }
 
 /* Style pour les liens dans le footer */
 footer a {
-  color: #fff; 
+  color: #fff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -145,71 +145,59 @@ footer a:hover {
   color: #0099ff;
 }
 
-
-
-
-/* Media query pour rendre les boîtes pleine largeur sur les petits écrans */
-@media (max-width: 768px) {
-    .box {
-        width: 100%;
-    }
-}
-
-/* Media query pour rendre les boîtes pleine largeur sur les petits écrans */
-@media (max-width: 768px) {
-  body {
-      padding: 20px;
+/* Media Queries pour les petits écrans */
+@media only screen and (max-width: 1000px) {
+  .box {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 
-  .btn-contact {
-      top: 20px;
-      right: 20px;
-      padding: 10px 15px;
-      font-size: 0.8em;
-  }
 
   .title {
-      font-size: 4em;
+    padding-top: 8%;
+    font-size: 4em;
   }
 
-  .container {
-      margin-top: -5%;
-  }
-
-  .box {
-      width: 100%;
-      margin-right: 0;
-      margin-bottom: 20px; 
-      padding: 15px;
-      border-radius: 20px;
-  }
-
-  .image_computer img {
-      width: 100%;
-  }
-
+  .image_computer img,
   .computer-image {
-      width: 80%;
-      margin-bottom: 10px;
+    width: 100%;
   }
 
   .image_profil img {
-      width: 150px;
-      height: 150px;
+    width: 150px;
+    height: 150px;
   }
+  .box:nth-child(3) {
+    margin-top: 1px;
+    margin-bottom: 100px;
+  }
+  .box:nth-child(4) {
+    margin-top: -11%;
+  }
+  
 
   #textbox {
       font-size: 1.2em;
+      font-size: 1.2em;
+      margin-left: 0;
+    font-size: 1.2em;
       margin-left: 0;
   }
 
   .titlemid {
-      font-size: 2.5em;
-      padding-top: 10%;
+    padding-top: 10%;
   }
 
   .pmid {
       font-size: 1.2em;
+      font-size: 1.2em;
+      margin-top: 3%;
+  }
+
+  footer {
+      padding: 20px;
+    font-size: 1.2em;
       margin-top: 3%;
   }
 
