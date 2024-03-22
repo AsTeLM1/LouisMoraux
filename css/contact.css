@@ -27,14 +27,14 @@ form {
     max-width: 1000px;
     margin: 0 auto;
     background-color: #1b2127;
-    padding: 40px; /* Augmenter le rembourrage */
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 label {
     display: block;
-    margin-bottom: 15px; /* Augmenter la marge */
+    margin-bottom: 5px;
     color: #fff;
 }
 
@@ -42,15 +42,15 @@ input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
-    padding: 20px; /* Augmenter le rembourrage */
-    margin-bottom: 20px; /* Augmenter la marge */
+    padding: 10px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
 input[type="submit"] {
     width: 100%;
-    padding: 20px; /* Augmenter le rembourrage */
+    padding: 10px;
     background-color: #0099ff;
     color: white;
     border: none;
@@ -64,30 +64,30 @@ input[type="submit"]:hover {
 
 .bottom {
     color: #fff;
-    margin-top: 30px; /* Augmenter la marge en haut */
+    padding-left: 8%;
 }
 
 /* Media query pour les petits écrans */
 @media screen and (max-width: 1000px) {
     form {
-        padding: 30px; /* Ajuster le rembourrage */
+        padding: 30px;
     }
     
     label {
-        margin-bottom: 15px; /* Ajuster la marge */
+        margin-bottom: 15px; 
     }
 
     input[type="text"],
     input[type="email"],
     textarea {
-        padding: 15px; /* Ajuster le rembourrage */
-        margin-bottom: 15px; /* Ajuster la marge */
+        padding: 15px; 
+        margin-bottom: 15px; 
     }
 
     input[type="submit"] {
-        padding: 15px; /* Ajuster le rembourrage */
+        padding: 15px;
     }
     .bottom{
-        padding-left: 15%;
+        margin-left: 25%;
     }
 }
