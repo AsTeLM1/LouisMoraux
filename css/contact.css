@@ -70,9 +70,25 @@ input[type="submit"]:hover {
 /* Media query pour les petits écrans */
 @media screen and (max-width: 1000px) {
     form {
-        padding: 10px;
+        padding: 20px; /* Ajuster le rembourrage */
     }
+    
+    label {
+        margin-bottom: 10px; /* Ajuster la marge */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        padding: 12px; /* Ajuster le rembourrage */
+        margin-bottom: 12px; /* Ajuster la marge */
+    }
+
+    input[type="submit"] {
+        padding: 12px; /* Ajuster le rembourrage */
+    }
+
     .bottom{
-        padding-left: 30%;
+        padding-left: 20%;
     }
 }
