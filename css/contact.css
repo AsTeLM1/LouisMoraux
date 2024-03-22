@@ -70,24 +70,32 @@ input[type="submit"]:hover {
 /* Media query pour les petits écrans */
 @media screen and (max-width: 1000px) {
     form {
-        padding: 30px;
+        max-width: 100%;
+        margin: 0 auto;
+        background-color: #1b2127;
+        padding: 30px; /* Ajuster le rembourrage */
     }
     
     label {
-        margin-bottom: 15px; 
+        margin-bottom: 15px; /* Ajuster la marge */
+        font-size: 180%; /* Ajuster la taille de la police */
     }
 
     input[type="text"],
     input[type="email"],
     textarea {
-        padding: 15px; 
-        margin-bottom: 15px; 
+        padding: 15px; /* Ajuster le rembourrage */
+        margin-bottom: 15px; /* Ajuster la marge */
+        font-size: 2em; /* Ajuster la taille de la police */
     }
 
     input[type="submit"] {
-        padding: 15px;
+        padding: 15px; /* Ajuster le rembourrage */
+        font-size: 2em; /* Ajuster la taille de la police */
     }
-    .bottom{
-        margin-left: 25%;
+
+    p.bottom{
+        font-size: 140%;
+        padding-left: 12%;
     }
 }
