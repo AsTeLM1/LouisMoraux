@@ -64,7 +64,13 @@ input[type="submit"]:hover {
 
 .bottom {
     color: #fff;
-    padding-left: 8%;
+    padding-left: 49em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -48em;
+    height: 7vh; /* Cette ligne assure que l'élément prendra toute la hauteur de l'écran */
 }
 
 /* Media query pour les petits écrans */
@@ -95,7 +101,9 @@ input[type="submit"]:hover {
     }
 
     p.bottom{
-        font-size: 140%;
-        padding-left: 12%;
+        font-size: 2em;
     }
+}
+
+@media screen and (device-width: 1366px) and (device-height: 768px) {
 }
