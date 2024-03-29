@@ -46,33 +46,12 @@ h2 {
 
 /* Media query pour les petits écrans */
 @media screen and (max-width: 1000px) {
-    form {
-        max-width: 100%;
-        margin: 0 auto;
-        background-color: #1b2127;
-        padding: 30px; /* Ajuster le rembourrage */
-    }
-    
-    label {
-        margin-bottom: 15px; /* Ajuster la marge */
-        font-size: 180%; /* Ajuster la taille de la police */
-    }
 
-    input[type="text"],
-    input[type="email"],
-    textarea {
-        padding: 15px; /* Ajuster le rembourrage */
-        margin-bottom: 15px; /* Ajuster la marge */
-        font-size: 2em; /* Ajuster la taille de la police */
-    }
-
-    input[type="submit"] {
-        padding: 15px; /* Ajuster le rembourrage */
-        font-size: 2em; /* Ajuster la taille de la police */
-    }
-
-    p.bottom{
-        font-size: 2em;
+    .retour{
+        margin-top: -100%;
+        top: 65%;
+        left: 43%;
+        font-size: 2.5em;
     }
 }
 
