@@ -22,56 +22,27 @@ h2 {
     margin-bottom: 20px;
     color: #fff;
 }
-
-form {
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: #1b2127;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.title{
+    margin-top: 20%;
+}
+.mail{
+    font-size: 3em;
+    color: #d2d2d2;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-    color: #fff;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-input[type="submit"] {
-    width: 100%;
-    padding: 10px;
+.retour {
+    position: absolute;
+    top: 65%;
+    left: 48%;
+    padding: 15px 25px;
+    border-radius: 25px;
     background-color: #0099ff;
     color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
+    text-decoration: none;
+  }
+  .retour:hover {
     background-color: #0056b3;
-}
-
-.bottom {
-    color: #fff;
-    padding-left: 49em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: -48em;
-    height: 7vh; /* Cette ligne assure que l'élément prendra toute la hauteur de l'écran */
-}
+  }
 
 /* Media query pour les petits écrans */
 @media screen and (max-width: 1000px) {

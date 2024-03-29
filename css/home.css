@@ -169,9 +169,8 @@ footer a:hover {
 
   .btn-contact {
     position: absolute;
-    top: 5%;
+    top: 8%;
     right: 40%;
-    padding: 25px 35px;
   }
   .image_computer img {
     top: -8em; /* Ajustement pour les écrans plus petits */
