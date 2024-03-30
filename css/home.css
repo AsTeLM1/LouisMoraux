@@ -126,7 +126,7 @@ body {
 }
 
 .bbox{
-  margin-top: 10%;
+  margin-top: 15%;
 }
 
 /* Styles pour le texte central */
@@ -137,7 +137,7 @@ body {
 .titlemid {
   color: #fff;
   font-size: 3em;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 .pmid {
   font-size: 1.5em;
@@ -219,6 +219,9 @@ footer a:hover {
     width: 100%; /* Réduire la largeur de l'ampoule */
     
   }
+  .bbox{
+    margin-top: 4%;
+  }
   .inBox{
     margin-top: -3%;
   }
@@ -230,7 +233,6 @@ footer a:hover {
       font-size: 1.8em;
       margin-left: 0;
   }
-
   .titlemid {
       margin-top: 10%;
   }
@@ -433,23 +435,24 @@ footer a:hover {
   }
 }
 
-@media only screen and (min-device-width: 1500px) {
+@media only screen and (min-device-width: 1800px) {
   .btn-contact {
     top: 5%;
     right: 5%;
     padding: 20px 30px; /* Ajustement pour les écrans plus petits */
+    font-size: 1.5em;
   }
 
   /* Style du titre */
   .title {
     position: relative;
-    font-size: 6em; /* Ajustement pour les écrans plus petits */
+    font-size: 11em; /* Ajustement pour les écrans plus petits */
     margin-top: 8%;
   }
 
   /* Style de l'image de l'ordinateur */
   .image_computer img {
-    top: -8em; /* Ajustement pour les écrans plus petits */
+    top: -12em; /* Ajustement pour les écrans plus petits */
     width: 80%; /* Ajustement pour les écrans plus petits */
   }
 
@@ -457,20 +460,26 @@ footer a:hover {
   .container{
     margin-top: -30%;
   }
+  .titlemid{
+    margin-top: -7%;
+  }
   .box {
     width: 48.5%; /* Pour occuper toute la largeur sur les écrans plus petits */
     margin-right: 5px;
     margin-left: 5px;
   }
 
+  .bbox{
+    margin-top: 8%;
+  }
+
   /* Style du texte dans les boîtes */
   .inBox {
-    font-size: 1.5em; /* Ajustement pour les écrans plus petits */
-    padding-top: 4%;
+    font-size: 2em; /* Ajustement pour les écrans plus petits */
   }
 
   #textbox{
-    font-size: 1.4em;
+    font-size: 2em;
   }
 
 
