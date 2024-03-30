@@ -81,6 +81,7 @@ body {
 }
 .box:nth-child(4) {
   margin-top: -11.5em;
+  height: 500px;
 }
 
 /* Styles pour le contenu dans les boîtes */
@@ -114,7 +115,7 @@ body {
 }
 #textbox {
   text-align: center;
-  font-size: 2em;
+  font-size: 1.8em;
   color: #d2d2d2;
 }
 #title {
@@ -161,7 +162,7 @@ footer a:hover {
 }
 
 /* Media Queries pour les petits écrans */
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 760px) {
   .container{
     margin-top: -28%;
   }
@@ -187,7 +188,6 @@ footer a:hover {
   .image_computer img {
     top: -8em; /* Ajustement pour les écrans plus petits */
     width: 100%; /* Ajustement pour les écrans plus petits */
-    top: 0em;
   }
   .box:last-child {
     margin-right: 0;
@@ -197,6 +197,7 @@ footer a:hover {
   }
   .box:nth-child(4) {
     margin-top: 0em;
+    height: 400px;
   }
 
   .image_profil img {
@@ -206,7 +207,7 @@ footer a:hover {
     margin-top: 2%;
   }
   .title {
-    margin-top: 40%;
+    margin-top: 20%;
     font-size: 5.5em;
   }
 
@@ -313,7 +314,7 @@ footer a:hover {
     margin-top: -30%;
   }
   .box {
-    width: 49%; /* Pour occuper toute la largeur sur les écrans plus petits */
+    width: 48.5%; /* Pour occuper toute la largeur sur les écrans plus petits */
     margin-right: 5px;
     margin-left: 5px;
   }
@@ -428,3 +429,4 @@ footer a:hover {
     padding: 20px; /* Réduction de l'espace dans le footer */
   }
 }
+
