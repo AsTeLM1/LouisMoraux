@@ -126,7 +126,7 @@ body {
 }
 
 .bbox{
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 /* Styles pour le texte central */
@@ -446,7 +446,7 @@ footer a:hover {
   /* Style du titre */
   .title {
     position: relative;
-    font-size: 11em; /* Ajustement pour les écrans plus petits */
+    font-size: 9.5em; /* Ajustement pour les écrans plus petits */
     margin-top: 8%;
   }
 
