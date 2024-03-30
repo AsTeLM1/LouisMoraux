@@ -164,7 +164,7 @@ footer a:hover {
 /* Media Queries pour les petits écrans */
 @media only screen and (max-device-width: 760px) {
   .container{
-    margin-top: -28%;
+    margin-top: -10%;
   }
   .box {
       width: 100%;
@@ -182,7 +182,7 @@ footer a:hover {
   .btn-contact {
     line-height: 1;
     position: absolute;
-    padding: 40px 40px;
+    padding: 30px 30px;
     font-size: 2.5em;
   }
   .image_computer img {
