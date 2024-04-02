@@ -1,31 +1,41 @@
 /* CSS général de la page */
 body {
-  background-color: #02070C;
+  background-color: #ffffff;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* Style pour le bouton "Contact Me" */
-.btn-container {
-  margin-top: 5%;
-  display: flex;
-  justify-content: center;
-  z-index: 2;
+.menu {
+  background-color: transparent;
+  margin: 0 auto; /* Centrer horizontalement */
+  padding: 0;
+  text-align: center;
+  margin-top: 5vh; /* Décaler vers le bas de 20 pixels */
 }
 
-.btn-contact {
-  display: block;
-  padding: 15px 25px;
-  border-radius: 25px;
-  background-color: #0099ff;
-  color: white;
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin-top: 3vh; /* Décaler vers le bas de 20 pixels */
+}
+
+.menu ul li {
+  display: inline;
+}
+
+.menu ul li a {
+  display: inline-block;
+  padding: 1vh 1.5vh;
+  color: #001F3F;
   text-decoration: none;
-  font-size: 1.3em;
+  transition: border-bottom 0.3s ease;
 }
 
-.btn-contact:hover {
-  background-color: #0056b3;
+.menu ul li a:hover {
+  border-bottom: 2px solid #001F3F;
 }
 
 /* CSS pour le titre */
@@ -34,20 +44,21 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 8em;
   text-align: center;
-  color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  margin-top: 5%;
+  color: #001F3F;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  margin-top: 5vh;
 }
 
 /* CSS pour l'image de l'ordinateur */
-.image_computer img {
+.image_container img {
   position: relative;
   z-index: 2;
-  top: -8em;
+  top: -8vh;
   width: 60%;
   display: block;
   margin: 0 auto;
 }
+
 .computer-image {
   position: absolute;
   width: 60%;
@@ -55,7 +66,7 @@ body {
 }
 
 /* Styles pour les conteneurs */
-.container {
+.BoxContainer {
   display: flex;
   flex-wrap: wrap;
   margin-top: -22%;
@@ -64,25 +75,23 @@ body {
 
 /* Styles pour les boîtes */
 .box {
-  width: 49%;
-  background-color: #1b2127;
-  margin-right: 7.5px;
-  margin-left: 7.5px;
+  width: 47%;
+  background-color: #ffffff;
+  margin-left: 4vh;
+  margin-right: 0.5vh;
   padding: 20px;
   box-sizing: border-box;
   border-radius: 40px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
-.box:last-child {
-  margin-right: 0;
-}
 .box:nth-child(3) {
-  margin-top: 15px;
+  margin-top: 2vh;
 }
+
 .box:nth-child(4) {
-  margin-top: -11.5em;
-  height: 500px;
+  margin-top: -22vh;
+  height: 60vh;
 }
 
 /* Styles pour le contenu dans les boîtes */
@@ -90,47 +99,38 @@ body {
   text-align: center;
   font-size: 2em;
   margin: 5px;
-  color: #fff;
+  color: #000000;
+  color: #001F3F;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* CSS pour l'image de l'ordinateur */
-.ampoule img {
-  position: relative;
-  z-index: 2;
-  top: -2em;
-  width: 35%;
-  display: block;
-  margin: 0 auto;
+
+#pourcentage {
+  font-size: 19vh;
+  margin-top: 8vh;
+  color: #001F3F;
 }
+
 #vente {
-  margin-top: 6%;
+  margin-top: 5vh;
+  color: #001F3F;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
+
 #vente2 {
-  margin-top: 12%;
+  margin-top: 10vh;
+  color: #001F3F;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
-.image_profil {
-  text-align: center;
-}
-.image_profil img {
-  border-radius: 50%;
-  width: 250px;
-  height: 250px;
-  margin-top: 2%;
-}
+
 #textbox {
   text-align: center;
   font-size: 1.8em;
-  color: #d2d2d2;
-}
-#title {
-  margin-top: 8%;
-}
-#infos {
-  margin-top: 12%;
+  color: #2e2e2e;
 }
 
-.bbox{
-  margin-top: 6%;
+.bbox {
+  margin-top: 5vh;
 }
 
 /* Styles pour le texte central */
@@ -138,29 +138,33 @@ body {
   text-align: center;
   margin-top: 5%;
 }
+
 .titlemid {
-  color: #fff;
   font-size: 3em;
   padding-top: 5%;
+  color: #001F3F;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
+
 .pmid {
   font-size: 1.5em;
-  color: #d2d2d2;
+  color: #2e2e2e;
   margin-top: 2.5%;
 }
 
 /* CSS pour le footer */
 footer {
-  background-color: #1b2127;
-  color: #fff;
+  background-color: #ffffff;
+  color: #000000;
   text-align: center;
-  padding: 40px;
-  margin-top: 5%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  padding: 5vh;
+  margin-top: 5vh;
 }
 
 /* Style pour les liens dans le footer */
 footer a {
-  color: #fff;
+  color: #000000;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -169,325 +173,106 @@ footer a:hover {
   color: #0099ff;
 }
 
-/* Media Queries pour les petits écrans */
-@media only screen and (max-device-width: 760px) {
-  .container{
-    margin-top: -10%;
+/* Media query pour les téléphones */
+@media only screen and (max-width: 768px) {
+  .menu ul {
+    margin-top: 10px;
   }
+
+  .menu ul li a {
+    padding: 10px;
+    font-size: 1.5em;
+  }
+
+  .title {
+    font-size: 4em;
+    margin-top: 2vh;
+  }
+
+  .image_container img {
+    width: 80%;
+    top: -5vh;
+  }
+
+  .computer-image {
+    width: 80%;
+  }
+
   .box {
-      width: 100%;
-      margin-bottom: 1em;
-      margin-right: 7.5px;
-      margin-left: 7.5px;
-      padding: 20px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10px;
   }
 
-  .btn-container {
-    padding-top: 5%;
-  }
-  
-
-  .btn-contact {
-    line-height: 1;
-    position: absolute;
-    padding: 30px 30px;
-    font-size: 2.5em;
-  }
-  .image_computer img {
-    top: -8em; /* Ajustement pour les écrans plus petits */
-    width: 100%; /* Ajustement pour les écrans plus petits */
-  }
-  .box:last-child {
-    margin-right: 0;
-  }
-  .box:nth-child(3) {
-    margin-top: 0;
-  }
   .box:nth-child(4) {
-    margin-top: 0em;
-    height: 400px;
+    margin-top: 2vh;
+    height: 60vh;
   }
 
-  .image_profil img {
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    margin-top: 2%;
-  }
-  .title {
-    margin-top: 20%;
-    font-size: 5.5em;
+  #pourcentage {
+    font-size: 10vh;
+    margin-top: 5vh;
   }
 
-  .ampoule {
-    width: 100%; /* Réduire la largeur de l'ampoule */
-    
+  #textbox{
+    font-size: 1em;
   }
-  .bbox{
-    margin-top: 4%;
-  }
-  .inBox{
-    margin-top: -3%;
-  }
+
   #vente{
-    margin-top: 1.75em;
+    margin-top: 2vh;
   }
-  #textbox {
-      text-align: center;
-      font-size: 1.8em;
-      margin-left: 0;
-  }
+
   .titlemid {
-      margin-top: 10%;
-  }
-
-  .pmid {
-      font-size: 1.2em;
-      margin-top: 5%;
-  }
-
-  footer {
-      padding: 20px;
-      font-size: 1.2em;
-  }
-}
-/* MacBooks petits */
-@media screen and (device-width: 1366px) and (device-height: 768px) {
-  .btn-contact {
-    top: 5%;
-    right: 5%;
-    padding: 10px 20px; /* Ajustement pour les écrans plus petits */
-  }
-
-  /* Style du titre */
-  .title {
-    position: relative;
-    font-size: 6em; /* Ajustement pour les écrans plus petits */
-    margin-top: 8%;
-  }
-
-  /* Style de l'image de l'ordinateur */
-  .image_computer img {
-    top: -9em; /* Ajustement pour les écrans plus petits */
-    width: 80%; /* Ajustement pour les écrans plus petits */
-  }
-
-  /* Styles des boîtes */
-  .container{
-    margin-top: -30%;
-  }
-  .box {
-    width: 49%; /* Pour occuper toute la largeur sur les écrans plus petits */
-    margin-right: 5px;
-    margin-left: 5px;
-  }
-
-  /* Style du texte dans les boîtes */
-  .inBox {
-    font-size: 1.5em; /* Ajustement pour les écrans plus petits */
-    padding-top: 5%;
-  }
-
-  #textbox{
-    font-size: 1.5em;
-  }
-
-
-  /* Style du footer */
-  footer {
-    padding: 20px; /* Réduction de l'espace dans le footer */
-  }
-}
-
-@media screen and (device-width: 1024px) and (device-height: 1366px) {
-  .btn-contact {
-    top: 5%;
-    right: 5%;
-    padding: 10px 20px; /* Ajustement pour les écrans plus petits */
-  }
-
-  /* Style du titre */
-  .title {
-    position: relative;
-    font-size: 6em; /* Ajustement pour les écrans plus petits */
-    margin-top: 8%;
-  }
-
-  /* Style de l'image de l'ordinateur */
-  .image_computer img {
-    top: -7em; /* Ajustement pour les écrans plus petits */
-    width: 80%; /* Ajustement pour les écrans plus petits */
-  }
-
-  /* Styles des boîtes */
-  .container{
-    margin-top: -30%;
-  }
-  .box {
-    width: 48.5%; /* Pour occuper toute la largeur sur les écrans plus petits */
-    margin-right: 5px;
-    margin-left: 5px;
-  }
-
-  /* Style du texte dans les boîtes */
-  .inBox {
-    font-size: 1.5em; /* Ajustement pour les écrans plus petits */
-    padding-top: 5%;
-  }
-
-  #textbox{
-    font-size: 1.5em;
-  }
-
-
-  /* Style du footer */
-  footer {
-    padding: 20px; /* Réduction de l'espace dans le footer */
-  }
-}
-
-@media screen and (device-width: 820px) and (device-height: 1180px) {
-  .btn-contact {
-    top: 5%;
-    right: 5%;
-    padding: 10px 20px; /* Ajustement pour les écrans plus petits */
-  }
-
-  /* Style du titre */
-  .title {
-    position: relative;
-    font-size: 6em; /* Ajustement pour les écrans plus petits */
-    margin-top: 8%;
-  }
-
-  /* Style de l'image de l'ordinateur */
-  .image_computer img {
-    top: -5em; /* Ajustement pour les écrans plus petits */
-    width: 80%; /* Ajustement pour les écrans plus petits */
-  }
-
-  /* Styles des boîtes */
-  .container{
-    margin-top: -30%;
-  }
-  .box {
-    width: 48.5%; /* Pour occuper toute la largeur sur les écrans plus petits */
-    margin-right: 5px;
-    margin-left: 5px;
-  }
-
-  /* Style du texte dans les boîtes */
-  .inBox {
-    font-size: 1.5em; /* Ajustement pour les écrans plus petits */
-    padding-top: 4%;
-  }
-
-  #textbox{
-    font-size: 1.4em;
-  }
-
-
-  /* Style du footer */
-  footer {
-    padding: 20px; /* Réduction de l'espace dans le footer */
-  }
-}
-@media screen and (min-width: 1280px) and (max-width: 1440px) {
-  .btn-contact {
-    top: 5%;
-    right: 5%;
-    padding: 10px 20px; /* Ajustement pour les écrans plus petits */
-  }
-
-  /* Style du titre */
-  .title {
-    position: relative;
-    font-size: 6em; /* Ajustement pour les écrans plus petits */
-    margin-top: 8%;
-  }
-
-  /* Style de l'image de l'ordinateur */
-  .image_computer img {
-    top: -5em; /* Ajustement pour les écrans plus petits */
-    width: 80%; /* Ajustement pour les écrans plus petits */
-  }
-
-  /* Styles des boîtes */
-  .container{
-    margin-top: -30%;
-  }
-  .box {
-    width: 48.5%; /* Pour occuper toute la largeur sur les écrans plus petits */
-    margin-right: 5px;
-    margin-left: 5px;
-  }
-
-  /* Style du texte dans les boîtes */
-  .inBox {
-    font-size: 1.5em; /* Ajustement pour les écrans plus petits */
-    padding-top: 4%;
-  }
-
-  #textbox{
-    font-size: 1.4em;
-  }
-
-
-  /* Style du footer */
-  footer {
-    padding: 20px; /* Réduction de l'espace dans le footer */
-  }
-}
-
-@media only screen and (min-device-width: 1800px) {
-  .btn-contact {
-    top: 5%;
-    right: 5%;
-    padding: 20px 30px; /* Ajustement pour les écrans plus petits */
-    font-size: 1.8em;
-  }
-
-  /* Style du titre */
-  .title {
-    position: relative;
-    font-size: 9.5em; /* Ajustement pour les écrans plus petits */
-    margin-top: 8%;
-  }
-
-  /* Style de l'image de l'ordinateur */
-  .image_computer img {
-    top: -12em; /* Ajustement pour les écrans plus petits */
-    width: 80%; /* Ajustement pour les écrans plus petits */
-  }
-
-  /* Styles des boîtes */
-  .container{
-    margin-top: -30%;
-  }
-  .titlemid{
-    margin-top: -7%;
-  }
-  .box {
-    width: 49%; /* Pour occuper toute la largeur sur les écrans plus petits */
-    margin-left: 10px;
-  }
-
-  .bbox{
-    margin-top: 8%;
-  }
-
-  /* Style du texte dans les boîtes */
-  .inBox {
-    font-size: 2em; /* Ajustement pour les écrans plus petits */
-  }
-
-  #textbox{
     font-size: 2em;
   }
 
+  .pmid {
+    font-size: 1.2em;
+  }
+}
 
-  /* Style du footer */
-  footer {
-    padding: 20px; /* Réduction de l'espace dans le footer */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu ul {
+    margin-top: 10px;
+  }
+
+  .menu ul li a {
+    padding: 10px;
+    font-size: 1.5em;
+  }
+
+  .title {
+    font-size: 6em;
+    margin-top: 3vh;
+  }
+
+  .image_container img {
+    width: 70%;
+    top: -5vh;
+  }
+
+  .computer-image {
+    width: 70%;
+  }
+
+  .box {
+    width: 45%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 10px;
+  }
+
+  #pourcentage {
+    font-size: 15vh;
+    margin-top: 5vh;
+  }
+
+  .titlemid {
+    font-size: 2.5em;
+  }
+
+  .pmid {
+    font-size: 1.3em;
   }
 }
