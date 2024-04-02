@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/home.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,39 +11,48 @@
     
 </head>
 <body>
-    <div class="btn-container">
-        <a class="btn-contact" href="contact.html">Me contacter</a>
-      </div>
+    <nav class="menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="developpeur.html">Développeur</a></li>
+            <li><a href="contact.html">Me contacter</a></li>
+            <li><a href="estimez.html">Estimez votre site</a></li>
+        </ul>
+    </nav>
+
     <div class="titlecontainer">
         <div class="title">Conception de Site Web</div>
     </div>
-    <div class="image_computer">
+    <div class="image_container">
         <img src="images/ComputerS.png" class="computer-image">
     </div>
-    <div class="container">
-        <div class="box" style="height: 500px;">
-            <h2 class="inBox" id="title">Louis Moraux (développeur)</h2>
-            <div class="image_profil"><img src="images/photohome.jpg"></div>
+    <div class="BoxContainer">
+        <div class="box" style="height: 60vh;">
+            <!-- Box haut gauche-->
+            <h1 class="inBox" id="vente2"> D'après BDC, un simple site augmenterait en moyenne les revenus de</h1>
+            <h2 class="inBox" id="pourcentage">22%</h2>
         </div>
         
-        <div class="box" style="height: 300px;">
-            <h2 class="inBox" id="vente">Un vrai BOOST pour votre entreprise</h2>
-            <p id="textbox">En effet, un site web constitue la vitrine numérique d'une entreprise.
+        <div class="box" style="height: 36vh;">
+            <!-- Box haut droite-->
+            <h2 class="inBox" id="vente">Un vrai BOOST de visibilité</h2>
+            <p id="textbox">un site web constitue la vitrine numérique d'une entreprise.
                 Elle offre de la visibilité à votre société, à vos produits et à vos services.
             </p>
         </div>
 
-        <div class="box" style="height: 300px;">
+        <div class="box" style="height: 36.5vh;">
+            <!-- Box bas gauche-->
             <h2 id="vente" class="inBox">
                 Des projets rapidement terminés
             </h2>
-            <p id="textbox">Mes délais concernant la réalisation de projet dépendent du contenu 
-                demandé par le client. En général, je termine mes projets en web-design 
-                en quelques semaines grand maximum.
+            <p id="textbox">Les délais pour la réalisation de mes projets varient en fonction du contenu requis par le client.
+                En règle générale, je finalise mes projets de web-design en quelques semaines au maximum
             </p>
         </div>
         
         <div class="box">
+            <!-- Box bas droite-->
             <h2 class="inBox" id="vente2">Une solution économique pour obtenir un site web</h2>
             <p class="bbox" id="textbox">En tant qu'étudiant, je propose des tarifs beaucoup plus abordables que les 
                 sociétés spécialisées dans le web-design qui vous feraient payer des miliers d'euros
@@ -55,7 +65,7 @@
     </div>
     <div class="textmid">
         <h1 class="titlemid">Pourquoi me choisir moi pour la création de votre site?</h1>
-        <p class="pmid">Tout d'abord, en tant qu'étudiant de deuxième année en sciences informatiques,
+        <p class="pmid">Tout d'abord, en tant qu'étudiant de deuxième année en sciences informatiques,<br>
                         je présente une alternative bien plus
                         économique que les tarifs généralement pratiqués par les entreprises spécialisées.<br>
                         Cette différence de coût significative ne compromet en rien la qualité du travail
