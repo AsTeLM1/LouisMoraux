@@ -1,0 +1,104 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.conteneur-centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.PrincipalBox {
+  width: 150vh;
+  height: 80vh;
+  background-color: #f0f0f0;
+  background-color: white;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+.price_container{
+  margin-top: 20vh;
+  margin-left: 10vh;
+  width: 40vh;
+  height: 50vh;
+}
+
+.price{
+}
+
+
+.titlePrice{
+  margin: auto;
+  color: #001F3F;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.WebContainer{
+  margin-left: 55vh;
+  margin-top: -70vh;
+  margin-right: 5vh;
+}
+.title{
+  margin-left: 25vh;
+  margin-top: 10vh;
+}
+
+.form{
+  margin-top: 5vh;
+  margin-left: 20vh;
+  margin-right: 10vh;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  background-color: #001F3F;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+  background-color: #00356e;
+}
+
+.backButton {
+  margin-top: 2vh;
+  margin-left: 2vh;
+}
+
+.backButton a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #001F3F;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.backButton a:hover {
+  background-color: #00356e;
+}
