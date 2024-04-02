@@ -38,6 +38,46 @@ body {
   border-bottom: 2px solid #001F3F;
 }
 
+/* Styles pour le menu déroulant des téléphones */
+.menu-mobile {
+  display: none;
+  text-align: center;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  background-color: #001F3F;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 1vh 2vh;
+  border-radius: 5px;
+  margin-top: 2vh;
+  margin-left: 4vh;
+  margin-right: 4vh;
+}
+
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list li {
+  margin-bottom: 10px;
+}
+
+.menu-list li a {
+  display: block;
+  padding: 1vh;
+  color: #001F3F;
+  text-decoration: none;
+  font-size: 1.9vh;
+}
+
+.menu-list li a:hover {
+  background-color: #f0f0f0;
+}
+
 /* CSS pour le titre */
 .title {
   position: relative;
@@ -175,27 +215,35 @@ footer a:hover {
 
 /* Media query pour les téléphones */
 @media only screen and (max-width: 768px) {
-  .menu ul {
-    margin-top: 10px;
+
+  .menu {
+    display: none;
   }
 
-  .menu ul li a {
-    padding: 5px;
-    font-size: 1em;
+  .menu-mobile {
+    display: block;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .menu-list.active {
+    display: block;
   }
 
   .title {
-    font-size: 2.3em;
-    margin-top: 2vh;
+    font-size: 2.8em;
+    margin-top: 4vh;
   }
 
   .image_container img {
     width: 100%;
-    top: -5vh;
+    top: 3vh;
   }
 
   .computer-image {
-    width: 80%;
+    width: 100%;
   }
 
   .box {
