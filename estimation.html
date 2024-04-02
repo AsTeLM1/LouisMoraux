@@ -3,37 +3,37 @@
 <head>
     <meta charset="utf-8">
     <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/estimation.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Indie+Flower&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="conteneur-centre">>
+    <div class="conteneur-centre">
         <div class="PrincipalBox">
             <div class="backButton">
                 <a href="index.html">Retour</a>
             </div>
             <div class="price_container">
-                <h1 class="titlePrice">Vous n'avez pas encore estimé votre site</h1>
-                <div class="price">
-
-                </div>
+                <h1 class="titlePrice">L'estimation du coût de votre site s'affichera ici !</h1>
+                <div id="PriceEstimation"></div>
+                <div id="fourchette"></div>
             </div>
             <div class="WebContainer">
                 <div class="titleBox">
                     <h1 class="title">Estimez le prix de votre site</h1>
                 </div>
                 <div class="form">
-                    <form>
+                    <form id="formEstimation">
                         <div class="form-group">
                             <label for="type_site">Type de site :</label>
                             <select id="type_site" name="type_site" required>
                                 <option value="">Sélectionnez le type de site</option>
-                                <option value="vitrine">Site vitrine</option>
-                                <option value="e-commerce">Site rendez vous</option>
-                                <option value="blog">Vitrine + rendez-vous</option>
-                                <option value="portfolio">Autre</option>
+                                <option value="Vitrine">Site vitrine</option>
+                                <option value="RDV">Site rendez vous</option>
+                                <option value="VitRDV">Vitrine + rendez-vous</option>
+                                <option value="Autre">Autre</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -43,24 +43,24 @@
                                 <option value="1">1 page</option>
                                 <option value="3">3 pages</option>
                                 <option value="5">5 pages</option>
-                                <option value="Autre">Autre</option>
+                                <option value="Plus">Plus que 5 pages</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="design">Niveau de design requis :</label>
                             <select id="design" name="design" required>
                                 <option value="">Sélectionnez le niveau de design</option>
-                                <option value="simple">Simple</option>
-                                <option value="modéré">Avancé</option>
-                                <option value="complex">Complèxe</option>
+                                <option value="Simple">Simple</option>
+                                <option value="Avance">Avancé</option>
+                                <option value="Complexe">Complèxe</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="referencement">Besoin de référencement :</label>
                             <select id="referencement" name="referencement" required>
                                 <option value="">Sélectionnez le besoin de référencement</option>
-                                <option value="oui">Oui</option>
-                                <option value="non">Non</option>
+                                <option value="Refoui">Oui</option>
+                                <option value="Refnon">Non</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -71,5 +71,6 @@
             </div>
         </div>
     </div>
+    <script src="js/estimation.js"></script>
 </body>
 </html>
