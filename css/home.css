@@ -118,14 +118,14 @@ body {
 }
 
 #vente2 {
-  margin-top: 10vh;
+  margin-top: 8vh;
   color: #001F3F;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 #textbox {
   text-align: center;
-  font-size: 1.8em;
+  font-size: 3.5vh;
   color: #2e2e2e;
 }
 
@@ -159,7 +159,7 @@ footer {
   text-align: center;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
   padding: 5vh;
-  margin-top: 5vh;
+  margin-top: 20vh;
 }
 
 /* Style pour les liens dans le footer */
@@ -180,17 +180,17 @@ footer a:hover {
   }
 
   .menu ul li a {
-    padding: 10px;
-    font-size: 1.5em;
+    padding: 5px;
+    font-size: 1em;
   }
 
   .title {
-    font-size: 4em;
+    font-size: 2.3em;
     margin-top: 2vh;
   }
 
   .image_container img {
-    width: 80%;
+    width: 100%;
     top: -5vh;
   }
 
