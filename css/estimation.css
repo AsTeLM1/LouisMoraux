@@ -27,7 +27,18 @@ body, html {
   height: 50vh;
 }
 
-.price{
+#PriceEstimation{
+  font-size: 3vh;
+  color: #001F3F;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#fourchette{
+  font-size: 5vh;
+  color: #001F3F;
+  margin-top: 5vh;
+  margin-left: 6vh;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -101,4 +112,51 @@ button:hover {
 
 .backButton a:hover {
   background-color: #00356e;
+}
+/* Media Query for Mobile */
+@media screen and (max-width: 600px) {
+  .PrincipalBox {
+    width: 90vw;
+    max-width: 90vw;
+    height: 95vh;
+  }
+
+  .price_container {
+    margin-top: 5vh;
+    margin-left: 5vw;
+    width: 80%;
+  }
+
+  .WebContainer {
+    margin-left: 5vw;
+    margin-top: 5vh;
+    margin-right: 5vw;
+  }
+
+  #PriceEstimation{
+    font-size: 2.5vh;
+    color: #001F3F;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  #fourchette{
+    font-size: 5vh;
+    color: #001F3F;
+    margin-top: 5vh;
+    margin-left: 6vh;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+
+  .title {
+    margin-left: 0vw;
+    margin-top: -35vh;
+    text-align: center;
+  }
+
+  .form {
+    margin-top: 3vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
 }
