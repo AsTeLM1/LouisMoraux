@@ -10,6 +10,7 @@ const formulaire = document.getElementById('formEstimation');
 const titlePriceElement = document.querySelector('.titlePrice');
 const PriceEstimation = document.getElementById('PriceEstimation');
 const fourchette = document.getElementById('fourchette')
+const redirection = document.getElementById('titlePrice');
 
 // Ajouter un écouteur d'événement sur la soumission du formulaire
 formulaire.addEventListener('submit', function(event) {
@@ -64,6 +65,7 @@ formulaire.addEventListener('submit', function(event) {
     PriceEstimation.textContent =  "Coût approximatif de votre site : ";
     fourchette.textContent = totalMin + "€" + " - " + totalMax + "€";
     titlePriceElement.style.display = "none";
+    redirection.style.display = "none";
 });
 
 // Définition de la fonction convertstr
