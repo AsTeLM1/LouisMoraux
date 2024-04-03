@@ -1,59 +1,101 @@
-/* Reset des styles par défaut */
-* {
-    box-sizing: border-box;
+body, html {
     margin: 0;
     padding: 0;
-}
-
-/* Style du formulaire */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #02070C;
-    padding: 20px;
+  }
+  
+  .conteneur-centre {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* La hauteur minimum de la vue */
-    margin: 0; /* Pour enlever les marges par défaut du body */
-}
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .PrincipalBox {
+    width: 150vh;
+    height: 80vh;
+    background-color: #f0f0f0;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+  }
+  .backButton {
+    margin-top: 2vh;
+    margin-left: 2vh;
+  }
 
-h2 {
-    text-align: center;
-    font-size: 4em;
-    margin-bottom: 20px;
+  .image_container img{
+    width: 35vh;
+    height: 35vh;
+    border-radius: 10vh;
+    margin-top: 20vh;
+    margin-left: 20vh;
+  }
+  
+  .backButton a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #001F3F;
     color: #fff;
-}
-.title{
-    margin-top: 20%;
-}
-.mail{
-    font-size: 3em;
-    color: #d2d2d2;
-}
-
-.retour {
-    position: absolute;
-    top: 65%;
-    left: 48%;
-    padding: 15px 25px;
-    border-radius: 25px;
-    background-color: #0099ff;
-    color: white;
     text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
   }
-  .retour:hover {
-    background-color: #0056b3;
+  
+  .backButton a:hover {
+    background-color: #00356e;
   }
 
-/* Media query pour les petits écrans */
-@media screen and (max-width: 1000px) {
+  .txt{
+    margin-left: 62vh;
+    margin-right: 8vh;
+    margin-top: -38vh;
+    text-align: center;
+  }
+  .Title{
+    color: #001F3F;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 2.5vh;
+  }
+  .informations{
+    display: inline;
+    margin-top: 10vh;
+    color: #2e2e2e;
+    font-size: 2vh;
 
-    .retour{
-        margin-top: -100%;
-        top: 65%;
-        left: 43%;
-        font-size: 2.5em;
-    }
-}
+  }
 
-@media screen and (device-width: 1366px) and (device-height: 768px) {
-}
+  @media screen and (max-width: 600px) {
+  .PrincipalBox {
+    width: 90vw;
+    max-width: 90vw;
+    height: 95vh;
+  }
+  .WebContainer {
+    margin-left: 5vw;
+    margin-top: 5vh;
+    margin-right: 5vw;
+  }
+  .image_container img{
+    width: 30vh;
+    height: 30vh;
+    border-radius: 10vh;
+    margin-top: 5vh;
+    margin-left: 6vh;
+  }
+  .informations{
+    text-align: center;
+    margin-left: 5vh;
+    margin-top: 0vh;
+  }
+  .Title{
+    margin-left: 0vh;
+  }
+
+  .txt {
+    margin-left: -0vw;
+    margin-right: 0vh;
+    margin-top: 0vh;
+    text-align: center;
+  }}
