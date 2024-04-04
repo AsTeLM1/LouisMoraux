@@ -71,7 +71,7 @@ formulaire.addEventListener('submit', function(event) {
 // Définition de la fonction convertstr
 function convertstr(str) {
     if (str === "Plus") {
-        return 100;
+        return 10;
     }
     const entier = parseInt(str, 10); // Convertir str en entier
     return entier;
