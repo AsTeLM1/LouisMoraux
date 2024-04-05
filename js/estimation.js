@@ -78,7 +78,7 @@ function convertstr(str) {
 }
 
 // Constantes des prix et niveaux de design
-const PrixPage = 50;
+const PrixPage = 30;
 const PrixVitrine = 30;
 const PrixRDV = 110;
 const NivDesignSimple = 0;
