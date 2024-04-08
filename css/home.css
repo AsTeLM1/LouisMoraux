@@ -330,7 +330,7 @@ footer a:hover {
 }
 
 /* Media query pour les écrans de 1024px à 1200px */
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+@media only screen and (min-width: 1025px) and (max-width: 1295px) {
   .menu ul {
     margin-top: 10px;
   }
