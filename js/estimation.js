@@ -40,7 +40,9 @@ formulaire.addEventListener('submit', function(event) {
     if (typeSite === "VitRDV") {
         total += PrixVitrine + PrixRDV;
     }
-
+    if(typeSite == "Vente"){
+        total += PrixVente;
+    }
     if (!isNaN(nb_pages_int)) {
         total += nb_pages_int * PrixPage;
     }
@@ -85,3 +87,4 @@ const NivDesignSimple = 0;
 const NivDesignAvance = 75;
 const NivDesignComplexe = 150;
 const Referencement = 100;
+const PrixVente = 1200;
